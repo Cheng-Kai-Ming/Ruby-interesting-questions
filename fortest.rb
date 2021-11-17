@@ -1,7 +1,23 @@
-x = [1,2,3,4,5,2]
-y = [1,6,7,8,9,10,11]
+class Animal
+
+	def eat
+		"嘎拎杯架"
+	end
+end
 
 
-z = x - x[1]
+class Cat < Animal
+	def initialize(x)
+		@x = x
+	end
+			
 
-p z
+	def login
+		self.eat
+	end
+
+end
+
+mo = Cat.new(1)
+
+
