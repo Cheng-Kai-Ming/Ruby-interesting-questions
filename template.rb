@@ -13,5 +13,3 @@ end
 p sort_by_rule(list1)  # 印出 [1, 2, 4, 3]
 p sort_by_rule(list2)  # 印出 [2, 5, 8, 6]
 p sort_by_rule(list3)  # 印出 [1, 4, 5, 7]
-
-
