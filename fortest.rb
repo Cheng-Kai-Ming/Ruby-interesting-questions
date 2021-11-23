@@ -1,17 +1,26 @@
-# 排序規則：[1, 2, 4, 3, 5, 8, 7, 9, 6]
+# 排序規則：['b', 'a', 'd', 'c', 'z', 'k']
 
-list1 = [1, 2, 3, 4]
-list2 = [6, 2, 8, 5]
-list3 = [7, 1, 5, 4]
+list = [
+  {name: 'a', age: 10}, 
+  {name: 'd', age: 20}, 
+  {name: 'k', age: 40}, 
+  {name: 'z', age: 20}, 
+]
 
-def sort_by_rule(list)
-  order_list = [1, 2, 4, 3, 5, 8, 7, 9, 6]
-  list = order_list - list
-  list = order_list - list
+
+def sort_hash(que)
+  list_ans=[]
+  for stand in ['b', 'a', 'd', 'c', 'z', 'k']
+    for num in 0..(que.length-1)
+      if stand == que[num][:name]
+        list_ans << que[num]
+      end
+    end
+  end
+  list_ans
 end
 
-p sort_by_rule(list1)  # 印出 [1, 2, 4, 3]
-p sort_by_rule(list2)  # 印出 [2, 5, 8, 6]
-p sort_by_rule(list3)  # 印出 [1, 4, 5, 7]
+p sort_hash(list)
+
 
 
